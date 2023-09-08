@@ -1,0 +1,61 @@
+Network Connections:
+Local Address: 192.168.10.102:43846
+Remote Address: 140.82.112.26:443
+State: 01
+
+Local Address: 192.168.10.102:42750
+Remote Address: 74.125.200.188:5228
+State: 01
+
+Local Address: 192.168.10.102:58796
+Remote Address: 52.139.250.209:443
+State: 01
+
+Local Address: 192.168.10.102:36016
+Remote Address: 142.251.43.133:443
+State: 01
+
+Local Address: 192.168.10.102:35218
+Remote Address: 52.139.250.209:443
+State: 01
+
+Local Address: 192.168.10.102:58980
+Remote Address: 142.251.43.131:443
+State: 01
+
+Local Address: 0.0.0.0:59117
+Remote Address: 0.0.0.0:0
+State: 07
+
+Local Address: 127.0.0.53:53
+Remote Address: 0.0.0.0:0
+State: 07
+
+Local Address: 192.168.10.102:68
+Remote Address: 192.168.10.1:67
+State: 01
+
+Local Address: 192.168.10.102:41267
+Remote Address: 216.58.199.142:443
+State: 01
+
+Local Address: 0.0.0.0:631
+Remote Address: 0.0.0.0:0
+State: 07
+
+Local Address: 192.168.10.102:38072
+Remote Address: 142.251.43.106:443
+State: 01
+
+Local Address: 224.0.0.251:5353
+Remote Address: 0.0.0.0:0
+State: 07
+
+Local Address: 0.0.0.0:5353
+Remote Address: 0.0.0.0:0
+State: 07
+
+Local Address: 192.168.10.102:38170
+Remote Address: 216.58.223.106:443
+State: 01
+

@@ -31,6 +31,7 @@ void write_to_file(const ProcessDetails& process, const std::string& filename)
     }
 }
 
+
 void show_process_details()
 {
     int pid;
@@ -70,11 +71,6 @@ void show_process_details()
     }
 
     pclose(cmd_output);
-
-    // Get the filename from the user
-    // std::string filename;
-    // std::cout << "Enter the filename to write: ";
-    // std::cin >> filename;
 
     // Write process details to the specified file
     write_to_file(process, "process_details.txt");

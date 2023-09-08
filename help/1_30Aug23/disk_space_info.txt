@@ -1,0 +1,49 @@
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9097 GB
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9097 GB
+Disk Path: /home
+Total Disk Space: 27.9932 GB
+Available Disk Space: 21.9621 GB
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9094 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9094 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9094 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9094 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9094 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9093 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9093 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9093 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9093 GB
+-----------------------
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.9093 GB
+-----------------------
