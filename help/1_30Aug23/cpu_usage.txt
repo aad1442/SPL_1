@@ -1,30 +1,5 @@
-CPU Usage: 3.05797%
-CPU Usage: 2.63158%
-CPU Usage: 1.75439%
-CPU Usage: 2.0025%
-CPU Usage: 1.38018%
-CPU Usage: 3.06822%
-CPU Usage: 2.76035%
-CPU Usage: 1.88442%
-CPU Usage: 1.88442%
-CPU Usage: 2.125%
-CPU Usage: 3.06876%
-CPU Usage: 2.50941%
-CPU Usage: 1.51324%
-CPU Usage: 2.25564%
-CPU Usage: 1.76101%
-CPU Usage: 3.18753%
-CPU Usage: 3.14861%
-CPU Usage: 2.39596%
-CPU Usage: 3.87985%
-CPU Usage: 2.50941%
-CPU Usage: 3.18815%
-CPU Usage: 2.88582%
-CPU Usage: 2.88221%
-CPU Usage: 2.38095%
-CPU Usage: 1.63522%
-CPU Usage: 3.18831%
-CPU Usage: 2.01511%
-CPU Usage: 1.63112%
-CPU Usage: 2.875%
-CPU Usage: 3.875%
+User: 88369%, Nice: 606%, System: 32041%, Idle: 6.20313e+06%, IOWait: 6388%, IRQ: 0%, SoftIRQ: 628%, Steal: 0%, Guest: 0%, Guest Nice: 0%
+User: 88379%, Nice: 606%, System: 32046%, Idle: 6.20392e+06%, IOWait: 6388%, IRQ: 0%, SoftIRQ: 628%, Steal: 0%, Guest: 0%, Guest Nice: 0%
+User: 88391%, Nice: 606%, System: 32053%, Idle: 6.2047e+06%, IOWait: 6390%, IRQ: 0%, SoftIRQ: 628%, Steal: 0%, Guest: 0%, Guest Nice: 0%
+User: 88405%, Nice: 606%, System: 32058%, Idle: 6.20548e+06%, IOWait: 6390%, IRQ: 0%, SoftIRQ: 628%, Steal: 0%, Guest: 0%, Guest Nice: 0%
+User: 88436%, Nice: 606%, System: 32067%, Idle: 6.20624e+06%, IOWait: 6391%, IRQ: 0%, SoftIRQ: 628%, Steal: 0%, Guest: 0%, Guest Nice: 0%
