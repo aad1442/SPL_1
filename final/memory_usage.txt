@@ -1,0 +1,6 @@
+Timestamp                               Total Memory (MB)        Free Memory (MB)         Buffers (MB)             Cached (MB)              Active (MB)              Inactive (MB)            
+Sun Sep 10 04:11:49 2023                7624                     203                      44                       2141                     2189                     4586                     
+Sun Sep 10 04:11:50 2023                7624                     202                      44                       2144                     2190                     4588                     
+Sun Sep 10 04:11:51 2023                7624                     191                      44                       2148                     2190                     4588                     
+Sun Sep 10 04:11:52 2023                7624                     195                      44                       2147                     2190                     4577                     
+Sun Sep 10 04:11:53 2023                7624                     195                      44                       2147                     2190                     4576                     
