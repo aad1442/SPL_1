@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include <sstream>
 #include <vector>
 #include <string>
@@ -56,7 +57,7 @@ std::vector<NetworkConnection> parse_network_connections()
         // Declare the ip_parts array here
         unsigned int ip_parts[4];
         unsigned int localPort, remotePort;
-        
+
         // Extract the port numbers in hexadecimal and convert them to decimal
         sscanf(local.c_str(), "%x:%x", &ip_parts[0], &localPort);
         sscanf(remote.c_str(), "%x:%x", &ip_parts[0], &remotePort);
@@ -67,10 +68,9 @@ std::vector<NetworkConnection> parse_network_connections()
         connection.state = state;
 
         // Filter established connections
-        if (state == "01")
-        { // 01 corresponds to ESTABLISHED state
+       // { // 01 corresponds to ESTABLISHED state
             connections.push_back(connection);
-        }
+       // }
     }
 
     netstat_output.close();
@@ -89,13 +89,12 @@ void log_network_connections(const std::vector<NetworkConnection> &connections, 
     }
 
     logfile << "Network Connections:" << std::endl;
+    logfile << "Local Address:           Remote Address:          State:" << std::endl;
     for (const NetworkConnection &connection : connections)
     {
-        // logfile << "Protocol: " << connection.protocol << std::endl;
-        logfile << "Local Address: " << connection.localAddress << std::endl;
-        logfile << "Remote Address: " << connection.remoteAddress << std::endl;
-        logfile << "State: " << connection.state << std::endl
-                << std::endl;
+        logfile << std::left << std::setw(25) << connection.localAddress;
+        logfile << std::left << std::setw(25) << connection.remoteAddress;
+        logfile << std::left << connection.state << std::endl;
     }
 
     logfile.close();
