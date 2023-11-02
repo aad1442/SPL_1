@@ -1,0 +1,26 @@
+System and Disk Information:
+Iteration 1:
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.6914 GB
+-----------------------
+Iteration 2:
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.6914 GB
+-----------------------
+Iteration 3:
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.6914 GB
+-----------------------
+Iteration 4:
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.6914 GB
+-----------------------
+Iteration 5:
+Disk Path: /
+Total Disk Space: 62.4576 GB
+Available Disk Space: 44.6914 GB
+-----------------------

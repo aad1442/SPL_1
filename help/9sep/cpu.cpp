@@ -1,32 +1,21 @@
 #include <iostream>
-#include <thread>
-#include <chrono>
 #include <fstream>
 #include <vector>
+#include <string>
+#include <unistd.h> // for sleep function
 
 // Structure to store CPU usage information
 struct CpuUsageInfo {
-    double user; //the cpu is running kernel code
-    double nice;  //The cpu is running in user-mode
-    double system; //Nice is when the CPU is executing a user task having below-normal priority
-    double idle;   //when the runnable queue is empty and there are no io operation going the cpu usage is marked as idle
-    double iowait; //io wait is when the cpu is waiting for an io operation to complete , and the cpu cannotbe used for anything else
-    double irq; //the kernel is servicing interrupt request
-    double softirq;
-    double steal;// when running in a virtualized environment, the hypervisor may steal cycles that are meant for your cpus and givr them to another, for various reason
-    double guest;
-    double guest_nice;
-
-//     user – time spent in user mode
-// nice – time spent processing nice processes in user mode
-// system – time spent executing kernel code
-// idle – time spent idle
-// iowait – time spent waiting for I/O
-// irq – time spent servicing interrupts
-// softirq – time spent servicing software interrupts
-// steal – time stolen from a virtual machine
-// guest – time spent running a virtual CPU for a guest operating system
-// guest_nice – time spent running a virtual CPU for a “niced” guest operating system
+    double user;      // Time spent in user mode
+    double nice;      // Time spent in user mode with low priority (nice)
+    double system;    // Time spent running kernel code
+    double idle;      // Time spent idle
+    double iowait;    // Time spent waiting for I/O
+    double irq;       // Time spent servicing hardware interrupts (IRQ)
+    double softirq;   // Time spent servicing software interrupts (softirq)
+    double steal;     // Time stolen from a virtual machine (VM)
+    double guest;     // Time spent running a virtual CPU for a guest OS
+    double guest_nice;// Time spent running a "niced" guest OS
 };
 
 // Function to parse CPU statistics from a line in /proc/stat
@@ -52,7 +41,6 @@ double calculateCpuUsagePercentage(const CpuUsageInfo& current, const CpuUsageIn
     double previousIdle = previous.idle;
 
     double cpuUsage = 100.0 * (1.0 - ((currentIdle - previousIdle) / (currentTotal - previousTotal)));
-    //This calculation provides insight into how actively the CPU is being used between the two measurement points.
     return cpuUsage;
 }
 
@@ -74,34 +62,39 @@ void calculateCpuUsage(CpuUsageInfo& cpuInfo) {
 }
 
 // Function to monitor CPU usage for a specified number of iterations
-void monitorCpuUsage(int numIterations) {
-    std::vector<CpuUsageInfo> cpuStats;
-    cpuStats.reserve(numIterations);
+std::vector<double> monitorCpuUsage(int numIterations) {
+    std::vector<double> cpuUsageHistory;
+    cpuUsageHistory.reserve(numIterations);
 
     CpuUsageInfo cpuInfo;
     CpuUsageInfo previousCpuInfo;
 
     for (int i = 0; i < numIterations; ++i) {
         calculateCpuUsage(cpuInfo);
-        cpuStats.push_back(cpuInfo);
 
         double cpuUsage = 0.0;
 
         if (i > 0) {
             cpuUsage = calculateCpuUsagePercentage(cpuInfo, previousCpuInfo);
-            std::cout << "Iteration " << i << ": CPU Usage - " << cpuUsage << "%\n";
         }
+
+        // Store CPU usage in history
+        cpuUsageHistory.push_back(cpuUsage);
 
         // Update previous CPU info
         previousCpuInfo = cpuInfo;
 
         if (i < numIterations - 1) {
-            // Wait for some time before calculating CPU usage again
-            std::this_thread::sleep_for(std::chrono::seconds(1)); // Calculate every 1 second
+            // Sleep for 1 second before the next iteration
+            sleep(1);
         }
     }
 
-    // Write CPU usage statistics to a file
+    return cpuUsageHistory;
+}
+
+// Function to log CPU usage results to a file
+void logCpuUsage(const std::vector<double>& cpuUsageHistory) {
     std::ofstream outFile("cpu_usage.txt");
 
     if (!outFile.is_open()) {
@@ -109,18 +102,21 @@ void monitorCpuUsage(int numIterations) {
         return;
     }
 
-    for (const CpuUsageInfo& info : cpuStats) {
-        outFile << "User: " << info.user << "%, Nice: " << info.nice << "%, System: " << info.system
-                << "%, Idle: " << info.idle << "%, IOWait: " << info.iowait << "%, IRQ: " << info.irq
-                << "%, SoftIRQ: " << info.softirq << "%, Steal: " << info.steal << "%, Guest: " << info.guest
-                << "%, Guest Nice: " << info.guest_nice << "%" << std::endl;
+    for (int i = 0; i < cpuUsageHistory.size(); ++i) {
+        outFile << "Iteration " << i + 1 << ": CPU Usage - " << cpuUsageHistory[i] << "%" << std::endl;
     }
 
     outFile.close();
+
+    std::cout << "CPU usage statistics written to cpu_usage.txt\n";
 }
 
 int main() {
     int numIterations = 5; // Specify the number of iterations
-    monitorCpuUsage(numIterations);
+    std::vector<double> cpuUsageHistory = monitorCpuUsage(numIterations);
+
+    // Log CPU usage results to a file
+    logCpuUsage(cpuUsageHistory);
+
     return 0;
 }

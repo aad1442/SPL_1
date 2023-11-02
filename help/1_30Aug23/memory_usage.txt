@@ -1,90 +1,40 @@
-Memory Usage (Iteration 1):
+Memory Usage (Iteration 1 - Sun Sep 10 03:43:34 2023):
 Total Memory: 7624 MB
-Free Memory: 1765 MB
-Buffers: 113 MB
-Cached: 3273 MB
+Free Memory: 206 MB
+Buffers: 49 MB
+Cached: 2207 MB
+Active: 1999 MB
+Inactive: 4656 MB
 
-Memory Usage (Iteration 2):
+Memory Usage (Iteration 2 - Sun Sep 10 03:43:35 2023):
 Total Memory: 7624 MB
-Free Memory: 1758 MB
-Buffers: 113 MB
-Cached: 3273 MB
+Free Memory: 199 MB
+Buffers: 49 MB
+Cached: 2209 MB
+Active: 1999 MB
+Inactive: 4651 MB
 
-Memory Usage (Iteration 3):
+Memory Usage (Iteration 3 - Sun Sep 10 03:43:36 2023):
 Total Memory: 7624 MB
-Free Memory: 1753 MB
-Buffers: 113 MB
-Cached: 3275 MB
+Free Memory: 211 MB
+Buffers: 49 MB
+Cached: 2205 MB
+Active: 1999 MB
+Inactive: 4648 MB
 
-Memory Usage (Iteration 4):
+Memory Usage (Iteration 4 - Sun Sep 10 03:43:37 2023):
 Total Memory: 7624 MB
-Free Memory: 1768 MB
-Buffers: 113 MB
-Cached: 3275 MB
+Free Memory: 210 MB
+Buffers: 49 MB
+Cached: 2206 MB
+Active: 1999 MB
+Inactive: 4645 MB
 
-Memory Usage (Iteration 5):
+Memory Usage (Iteration 5 - Sun Sep 10 03:43:38 2023):
 Total Memory: 7624 MB
-Free Memory: 1768 MB
-Buffers: 113 MB
-Cached: 3275 MB
-
-Memory Usage (Iteration 1):
-Total Memory: 7624 MB
-Free Memory: 1715 MB
-Buffers: 114 MB
-Cached: 3278 MB
-
-Memory Usage (Iteration 2):
-Total Memory: 7624 MB
-Free Memory: 1716 MB
-Buffers: 114 MB
-Cached: 3275 MB
-
-Memory Usage (Iteration 3):
-Total Memory: 7624 MB
-Free Memory: 1736 MB
-Buffers: 114 MB
-Cached: 3273 MB
-
-Memory Usage (Iteration 4):
-Total Memory: 7624 MB
-Free Memory: 1733 MB
-Buffers: 114 MB
-Cached: 3275 MB
-
-Memory Usage (Iteration 5):
-Total Memory: 7624 MB
-Free Memory: 1736 MB
-Buffers: 114 MB
-Cached: 3275 MB
-
-Memory Usage (Iteration 1):
-Total Memory: 7624 MB
-Free Memory: 1722 MB
-Buffers: 114 MB
-Cached: 3273 MB
-
-Memory Usage (Iteration 2):
-Total Memory: 7624 MB
-Free Memory: 1716 MB
-Buffers: 114 MB
-Cached: 3275 MB
-
-Memory Usage (Iteration 3):
-Total Memory: 7624 MB
-Free Memory: 1723 MB
-Buffers: 114 MB
-Cached: 3276 MB
-
-Memory Usage (Iteration 4):
-Total Memory: 7624 MB
-Free Memory: 1723 MB
-Buffers: 114 MB
-Cached: 3277 MB
-
-Memory Usage (Iteration 5):
-Total Memory: 7624 MB
-Free Memory: 1723 MB
-Buffers: 114 MB
-Cached: 3276 MB
+Free Memory: 210 MB
+Buffers: 49 MB
+Cached: 2205 MB
+Active: 1999 MB
+Inactive: 4644 MB
 
