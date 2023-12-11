@@ -6,8 +6,8 @@
 //#include "header.h"
 #include<time.h>
 #include <thread>
-#include<windows.h>
-#include<wincon.h>
+//#include<windows.h>
+//#include<wincon.h>
 #include<sstream>
 
 using namespace std;
@@ -958,7 +958,7 @@ int main()
                     continue;
                 }
 
-                Sleep(4000);
+               // Sleep(4000);
                 openingImage(stegoImage);
 
             }
@@ -994,7 +994,7 @@ int main()
                 }
 
                 extractingData(extendedStegoImageFileName);
-                Sleep(25000);
+               // Sleep(25000);
 
             }
         }
