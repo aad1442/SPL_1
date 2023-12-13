@@ -5,6 +5,28 @@
 #include <arpa/inet.h>
 #define SIZE 1024
 
+char* addImageFileExtension(const char* imageFileName) {
+    // Calculate the length of the new string
+    size_t newLength = strlen(imageFileName) + 4;  // 4 for .bmp
+
+    // Allocate memory for the new string
+    char* newFileName = (char*)malloc(newLength + 1);  // +1 for the null terminator
+
+    // Check if memory allocation was successful
+    if (newFileName == NULL) {
+        perror("Memory allocation failed");
+        exit(EXIT_FAILURE);
+    }
+
+    // Copy the original string to the new string
+    strcpy(newFileName, imageFileName);
+
+    // Add the file extension
+    strcat(newFileName, ".bmp");
+
+    return newFileName;
+}
+
 void send_file(FILE *fp, int sockfd) {
   char data[SIZE];
   size_t bytesRead;
@@ -32,6 +54,9 @@ int main(){
   printf("Enter the file name: ");
   fgets(filename, sizeof(filename), stdin);
   filename[strcspn(filename, "\n")] = 0;  // Remove newline character
+  char* newFileName = addImageFileExtension(filename);
+    strcpy(filename, newFileName);
+
   printf("\nfile name is %s\n",filename);
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
   if(sockfd < 0) {
