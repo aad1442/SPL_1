@@ -1,5 +1,0 @@
-User: 272937%, Nice: 626%, System: 89856%, Idle: 1.3698e+07%, IOWait: 14618%, IRQ: 0%, SoftIRQ: 2164%, Steal: 0%, Guest: 0%, Guest Nice: 0%
-User: 272988%, Nice: 626%, System: 89873%, Idle: 1.36987e+07%, IOWait: 14619%, IRQ: 0%, SoftIRQ: 2165%, Steal: 0%, Guest: 0%, Guest Nice: 0%
-User: 273052%, Nice: 626%, System: 89893%, Idle: 1.36994e+07%, IOWait: 14621%, IRQ: 0%, SoftIRQ: 2165%, Steal: 0%, Guest: 0%, Guest Nice: 0%
-User: 273094%, Nice: 626%, System: 89912%, Idle: 1.37001e+07%, IOWait: 14621%, IRQ: 0%, SoftIRQ: 2166%, Steal: 0%, Guest: 0%, Guest Nice: 0%
-User: 273147%, Nice: 626%, System: 89924%, Idle: 1.37009e+07%, IOWait: 14621%, IRQ: 0%, SoftIRQ: 2166%, Steal: 0%, Guest: 0%, Guest Nice: 0%
